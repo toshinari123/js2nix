@@ -20,7 +20,7 @@ pkgs.mkShell {
   passthru.env = env;
   buildInputs = [
     (env.nodeModules.override { prefix = "/lib/node_modules"; })
-    pkgs.nodejs
+    pkgs.nodejs_21
     js2nix.bin
     js2nix.proxy
     js2nix.node-gyp
